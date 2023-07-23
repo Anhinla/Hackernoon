@@ -1,0 +1,1433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackernoon</title>
+    <link rel="stylesheet" href="hackernoon.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400;500;700;800&family=VT323&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/165f0c56db.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="input">
+            <input type="text" class="input-search" placeholder="Discover Anything">
+            <div class="search-img">
+                <img src="https://media.discordapp.net/attachments/1125057253297369139/1131248063525163028/search-new.png?width=28&height=28">
+            </div>
+        </div>
+        <div class="header-img">
+            <img src="https://media.discordapp.net/attachments/1125057253297369139/1131247868628451458/hn-logo.png?width=928&height=150" width="56%">
+        </div>
+        <div class="btn-container">
+            <div><button class="writing-btn">Start Writing</button></div>
+            <div><button class="log-in-btn">Log in</button></div>
+           <div class="notify"><button class="notify-btn"><img src="https://media.discordapp.net/attachments/1125057253297369139/1131247945690382376/6wIYfIv0qIYmy3VR5CfkZIlpCjDUGyIAAAAAAAAAAAAAAAAAA.png?width=720&height=720" width="40%"></button></div>
+        </div>
+    </div>
+    <div class="menu-bars">
+        <div class="item" data-id="read">READ</div>
+        <div class="item" data-id="stories">TOP STORIES</div>
+        <div class="item" data-id="write">WRITE</div>
+        <div class="item" data-id="learn">LEARN</div>
+        <div class="item" data-id="start-up">STARTUPS</div>
+        <div class="item" data-id="tech">TECH CO DIRECTORY</div>
+        <div class="item" data-id="about">ABOUT</div>
+        <div class="item" data-id="help">HELP</div>
+        <div class="item" data-id="crypto">CRYPTO</div>
+        <div class="item" data-id="shop">SHOP</div>
+        <div class="item" data-id="partner">PARTNER</div>
+        <div class="item" data-id="web">WEB 2.5</div>
+    </div>
+    <div class="menu-content">
+        <div class="pop-up hide toggle-js" id="read">
+            <div class="read-menu">
+                <div class="title2">
+                    <h2>Discover (Sort By)</h2>
+                </div>
+                <div class="content">
+                All Topics<br>
+                Top Stories<br>
+                Tech Beat <br>
+                Live Reactions<br>
+                Noonification<br>
+                Blockchain Games<br>
+                SuperTag<br>
+                Books<br>
+                SLogging<br>
+                All Newsletters<br>
+                Random Story<br>
+                Daily Archive
+                </div>
+            </div>
+            <div class="read-menu">
+                <div class="title2">
+                    <h2>Tech</h2>
+                </div>
+                <div class="content">
+                All Topics( Click here)<br>
+                AI<br>
+                Blockchain<br>
+                Cybersecurity<br>
+                Data Science<br>
+                Decentralization<br>
+                Finance<br>
+                Futurism<br>
+                Gaming<br>
+                Hardware Reviews<br>
+                Machine Learning<br>
+                Media<br>
+                Programming<br>
+                Engineering<br>
+                Robotics<br>
+                Virtual Reality
+                </div>
+            </div>
+            <div class="read-menu">
+                <div class="title2">
+                    <h2>Software</h2>
+                </div>
+                <div class="content">
+                APIs<br>
+                Architecture<br>
+                C<br>
+                Coding<br>
+                Engineering<br>
+                Java<br>
+                Javascript<br>
+                NodeJS<br>
+                Open Source<br>
+                PHP<br>
+                Programming<br>
+                Python<br>
+                React<br>
+                Ruby<br>
+                SQL<br>
+                Swift
+                </div>
+            </div>
+        </div>
+
+
+        <div class="stories-pop-up toggle-js" id="stories">
+            <div class="stories-menu">
+                <div class="title2">
+                    <h2>Trending</h2>
+                </div>
+                <div class="content">
+                #1- VS Code Extensios Every Developer should Know<br><br>
+                #2- Opside ZK-PoW V2.0: A Multi-chain and Multi-rollup Decentralized Prover Network<br><br>
+                #3- GPT-4 and Stable Diffusion XL for $10/month: Is YouPro Worth It?<br><br>
+                #4- What You Need to Know before You Start as CTO<br><br>
+                #5- Building Efficient npm Packages with React, TypeScript, and CSS Modules: A comprehensive Guide<br><br>
+                #6- Your Ultimate Guide to Mastering AI Prompt Engineering With MobileGPT<br><br>
+                #7- Dark-Themed UI Design Tips<br><br>
+                #8- Radix's Asset-Oriented Transaction: Making Transactions Meaningful<br><br>
+                #9- Massa<br><br>
+                #10- Growing Your B2B IT Business wih an 8 Step Outreach Strategy<br><br>
+                #11- How to Access the Dark Web: Methods for Android and PC<br><br>
+                #12- Top 6 Code Playgrounds That Every Web Developer Should Check out<br><br>
+                #13- Using OpenAI's Whisper Model to Convert Speech into Text<br><br>
+                #14- Daily Coding Problem: Triangular Numbers and Big Divisors<br><br>
+                #15- The Future of IT Hiring: What's Changing<br><br>
+                #16- Use picture to Dynamically Render Images for Different User Environments<br><br>
+                #17- 327 Stories to Learn about Saas<br><br>
+                #18- Personal Development is a Multi-Billion Dollar Industry<br><br>
+                #19- 10 Lessons I learned as First-time Tech Product Founder<br><br>
+                #20- The 10 best Javascript Frameworks to Use in 2023
+                </div>
+            </div>
+            <div class="stories-menu">
+                <div class="title2">
+                    <h2>Latest</h2>
+                </div>
+                <div class="content">
+                THE WRITING OF THE BOOK<br><br>
+                LITTLE DOG MONDAY KNOWS<br><br>
+                POIROT EXPLAINS<br><br>
+                ROUND THE TABLE<br><br>
+                The case of the Missing Hill<br><br>
+                M. Giraud finds some clues<br><br>
+                IN THE HOUSE OF THE ENEMY<br><br>
+                Mr. McGrath Refuses an Invitation<br><br>
+                How Half Baby Doge Coin is Popularizing Crypto Charity<br><br>
+                Coin Is Popularizing Crypto Charity<br><br>
+                Through the Biggest Memecoin Communities<br><br>
+                The future of Work: AI automation to Replace Half of Human Jobs by 2045<br><br>
+                Will Meta's New LLamA Usher in a New Wave of Competition?<br><br>
+                The conception of the scientific does not consist alone<br><br>
+                THE SUN<br><br>
+                Balancing Privacy and Personalization With ML-Powered Advertising Solutions<br><br>
+                How to create a Telegram Bot to Monitor Your Service Uptime in python( Part 1: Instant Metrics)<br><br>
+                A DISOBEDIENT BROTHER<br><br>
+                Is AI the Key to Creating Gree Solutions in Web Hosting?
+                </div>
+            </div>
+            <div class="stories-menu">
+                <div class="title2">
+                    <h2>Translations</h2>
+                </div>
+                <div class="content">
+                Espanol<br><br>
+                Vietnamese<br><br>
+                French<br><br>
+                Coding<br><br>
+                Chinese<br><br>
+                Portugese<br><br>
+                Japanese<br><br>
+                </div>
+            </div>
+        </div>
+
+        <div class="pop-up writing toggle-js" id="write">
+            <div class="write-menu">
+                <div class="title2">
+                    <h2>Start Writing</h2>
+                </div>
+                <div class="content">
+                A New Draft<br>
+                Diversity & Support<br>
+                Editorial Guideline<br>
+                How to Get Published<br>
+                Import Story<br>
+                Markdown Text Editor<br>
+                Marketing You<br>
+                Reach more People<br>
+                Submit Company Stories<br>
+                Republishing Guide<br>
+                The Publishing Process<br>
+                Writer Perks<br>
+                Your call to Action<br>
+                Your Story stats<br>
+                Your Writer Dashboard
+                </div>
+            </div>
+            <div class="write-menu">
+                <div class="title2">
+                    <h2>Story Templates</h2>
+                </div>
+                <div class="content">
+                All Text Interview Templates<br>
+                Crypto Questions<br>
+                Data Science Questions<br>
+                Exciting Tech Trends<br>
+                Founder Questions<br>
+                How You Got Into Tech<br>
+                Metaverse Questions<br>
+                Meet the Programmer<br>
+                Meet the Writer<br>
+                Startup Funding Interview<br>
+                Noonies Nominee Interview<br>
+                Share Your Life Hacks<br>
+                $tocks Interview<br>
+                Subscribe to @Prompts<br>
+                Women in Tech Interview<br>
+                </div>
+            </div>
+            <div class="write-menu">
+                <div class="title2">
+                    <h2>Writing Contests</h2>
+                </div>
+                <div class="content">
+                All Contests ($207k)<br>
+                #Blockchain ($6k)<br>
+                #CyberSecurity ($6k)<br>
+                #Decentralized-Internet ($57k)<br>
+                #Debugging ($6k)<br>
+                #DeFi ($30k)<br>
+                #Future-of-Finance ($6k)<br>
+                #Future-of-Gaming ($16k)<br>
+                #Gaming-Metaverse ($15k)<br>
+                #Growth-Marketing ($12k)<br>
+                Internet Talking About These<br>
+                #Linux ($9k)<br>
+                Sponsor a Writing Contest<br>
+                #Web3 ($12k)<br>
+                Winners Announcements !!!<br>
+                </div>
+            </div>
+        </div>
+
+        <div class="learn-pop-up hide learn toggle-js" id="learn">
+            <div class="write-menu">
+                <div class="title2">
+                    <h2>Self-Paced Courses</h2>
+                </div>
+                <div class="content">
+                The Learn Repo<br><br>
+                Stanford Blockchain Course <i class="fas fa-paperclip"></i><br><br>
+                Becoming a Cyber Professional bundle by EC-Council <i class="fas fa-paperclip"></i><br><br>
+                Pentesting Agent Intermediate bundle By EC-Council <i class="fas fa-paperclip"></i><br><br>
+                Pentesting Agent Beginner bundle By EC-Council <i class="fas fa-paperclip"></i><br><br>
+                Mastering Digital Forensics bundle by EC-Council <i class="fas fa-paperclip"></i><br><br>
+                Mastering Network Security bundle by EC-Council <i class="fas fa-paperclip"></i><br><br>
+                Angular Masterclass <i class="fas fa-paperclip"></i><br><br>
+                C++ free resource<br><br>
+                Cybersecurity <i class="fas fa-paperclip"></i><br><br>
+                Data Science Bootcamp <i class="fas fa-paperclip"></i><br><br>
+                Java Masterclass <i class="fas fa-paperclip"></i><br><br>
+                Java Free Resource<br><br>
+                JavaScript: Advanced <i class="fas fa-paperclip"></i><br><br>
+                Machine Learning A-Z <i class="fas fa-paperclip"></i><br><br>
+                Web Development Bootcamp <i class="fas fa-paperclip"></i><br><br>
+                Python Free Resource
+                </div>
+            </div>
+            <div class="write-menu">
+                <div class="title2">
+                    <h2>Tech Deep Dives</h2>
+                </div>
+                <div class="content">
+                Agile<br>
+                Artificial Intelligence<br><br>
+                Cloud Computing<br><br>
+                DeFi<br><br>
+                DevOps<br><br>
+                Entrepreneurship<br><br>
+                Ethereum<br><br>
+                Marketing<br><br>
+                NFTs<br><br>
+                NodeJS<br><br>
+                Open Source<br><br>
+                React<br><br>
+                Software Development<br><br>
+                Web Deverlopment<br><br>
+                </div>
+            </div>
+            <div class="write-menu">
+                <div class="title2">
+                    <h2>Build Skillzz</h2>
+                </div>
+                <div class="content">
+                Apply Psychology of Colors<br><br>
+                Auto-Generate Graphics<br><br>
+                Build Frontend for Ethereum dApps<br><br>
+                Build a Private Blockchain<br><br>
+                Create Generative Art with python<br><br>
+                Choose the Right Kubernetes Container<br><br>
+                Get Featured on Product Hunt without Hunter<br><br>
+                Go serverless with AWS<br><br>
+                Hack Smart Contracts<br><br>
+                Host Your Git Server on Raspberry Pi<br><br>
+                Implement QA Properly<br><br>
+                Insert Binary Tree in Rust<br><br>
+                Learn Anything<br><br>
+                Measure Technical Debt<br><br>
+                Protect Your Code with Gulp<br><br>
+                Write NFT Smart Contracts
+                </div>
+            </div>
+        </div>
+        <div class="startup-pop-up hide toggle-js" id="start-up">
+            <div class="write-menu">
+                <div class="title2">
+                    <h2>Startups of the Year</h2>
+                </div>
+                <div class="content">
+                FAQs<br>
+                Startups Interview Series<br>
+                African Startups<br>
+                Asian Startups<br>
+                European Startups<br>
+                North American Startups<br>
+                Oceanian Startups<br>
+                South American Startups<br>
+                </div>
+            </div>
+            <div class="write-menu">
+                <div class="title2">
+                    <h2>Partner</h2>
+                </div>
+                <div class="content">
+                Startup Package
+                </div>
+            </div>
+        </div>
+
+        <div class="tech-pop-up hide toggle-js" id="tech">
+            <div class="stories-menu">
+                <div class="title2">
+                    <h2>Top Tech Companies</h2>
+                </div>
+                <div class="content">
+                #1 Roblox<br><br>
+                #2 Instagram<br><br>
+                #3 Facebook<br><br>
+                #4 Adocia<br><br>
+                #5 Tenable<br><br>
+                #6 Arthur J. Gallagher<br><br>
+                #7 Catch<br><br>
+                #8 Google<br><br>
+                #9 Dexence<br><br>
+                #10 Abbott Laboratories<br><br>
+                #11 Figma<br><br>
+                #12 Microsoft<br><br>
+                #13 Activision Blizzard <br><br>
+                #14 NVIDIA<br><br>
+                #15 Long & McQuade Musical Instruments<br><br>
+                #16 Coinbase<br><br>
+                #17 CM Technologies<br><br>
+                #18 Avalance<br><br>
+                #19- 10 Lessons I learned as First-time Tech Product Founder<br><br>
+                #20- The 10 best Javascript Frameworks to Use in 2023
+                </div>
+            </div>
+            <div class="stories-menu">
+                <div class="title2">
+                    <h2>Trending companies</h2>
+                </div>
+                <div class="content">
+                Arthur J. Gallagher (+1800%)<br><br>
+                Catch (1800%)<br><br>
+                Abbott Laboratories (+1500%)<br><br>
+                Figma (+1300%)<br><br>
+                Coinbase (+700%)<br><br>
+                Arianne Phosphate (+500%)<br><br>
+                Sony (+500%)<br><br>
+                Activision Blizzard (+175%)<br><br>
+                Long & McQuade Musical Instrument (+166.6669%)<br><br>
+                Adocia (+105%)<br><br>
+                Tenable( +78.571428%)<br><br>
+                Roblox (+33.92857%)<br><br>
+                Avalanche (-0%)<br><br>
+                The conception of the scientific does not consist alone<br><br>
+                THE SUN<br><br>
+                Balancing Privacy and Personalization With ML-Powered Advertising Solutions<br><br>
+                How to create a Telegram Bot to Monitor Your Service Uptime in python( Part 1: Instant Metrics)<br><br>
+                A DISOBEDIENT BROTHER<br><br>
+                Is AI the Key to Creating Gree Solutions in Web Hosting?
+                </div>
+            </div>
+            <div class="stories-menu">
+                <div class="title2">
+                    <h2>Startups Worldwide</h2>
+                </div>
+                <div class="content">
+                #1 North America, Startups<br><br>
+                #2 Asia, Startups<br><br>
+                #3 Europe, Startups<br><br>
+                #4 Africa, Startups<br><br>
+                #5 South America, Startups<br><br>
+                #6 404, Startups<br><br>
+                #7 Oceania, Startups<br><br>
+                </div>
+            </div>
+            <div class="stories-menu">
+                <div class="title2">
+                    <h2>Tech Company News Pages</h2>
+                </div>
+                <div class="content">
+                About<br><br>
+                Benefits<br><br>
+                Commentary<br><br>
+                Discounts<br><br>
+                Discover<br><br>
+                Get Listed<br><br>
+                Subcribe<br><br>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-pop-up hide toggle-js" id="about">
+            <div class="write-menu">
+                <div class="title2">
+                    <h2>Company</h2>
+                </div>
+                <div class="content">
+                Contact Us<br>
+                About Us<br>
+                Brand Assets<br>
+                Careers<br>
+                Podcast<br>
+                Full list of Social Media Accounts<br>
+                Find more companies<br>
+                </div>
+            </div>
+            <div class="write-menu">
+                <div class="title2">
+                    <h2>People</h2>
+                </div>
+                <div class="content">
+                CEO<br>
+                COO<br>
+                Meet the Team<br>
+                Annual Noonies Awards<br>
+                Shareholder Updates<br>
+                More about us<br>
+                Who publishes here?<br>
+                </div>
+            </div>
+            <div class="write-menu">
+                <div class="title2">
+                    <h2>Software</h2>
+                </div>
+                <div class="content">
+                Product Updates<br>
+                Slogging: Slack Blogging<br>
+                Startup Voting<br>
+                Free Internet Plugin<br>
+                HackerNoon is a GIF<br>
+                On Github<br>
+                Mobile App Coming Soon :-
+                </div>
+            </div>
+        </div>
+
+        <div class="help-pop-up pop-up hide toggle-js" id="help">
+          
+            <div class="stories-menu">
+                <div class="title2">
+                    <h2>Writers</h2>
+                </div>
+                <div class="content">
+                We Give all the FAQs<br>
+                Story Rejected?<br>
+                Account Settings<br>
+                How to use our Editor<br>
+                Contact
+                </div>
+            </div>
+            <div class="stories-menu">
+                <div class="title2">
+                    <h2>Visitors</h2>
+                </div>
+                <div class="content">
+                What the FAQ?<br>
+                Sign Up<br>
+                Getting Started<br>
+                How to Navigate our Site<br>
+                Contact
+                </div>
+            </div>
+        </div>
+
+        <div class="pop-up help hide toggle-js" id="crypto">
+          
+            <div class="stories-menu">
+                <div class="title2">
+                    <h2>Trending Coins (based on reader interest)</h2>
+                </div>
+                <div class="content">
+                #1- XRP<br>
+                #2- TRON<br>
+                #3- Litecoin<br>
+                #4- Bitcoin<br>
+                #5- Wrapped BNB<br>
+                #6- Pepe<br>
+                #7- STEPN<br>
+                #8- Dash<br>
+                #9- FTX Token<br>
+                #10- Arbitrum<br>
+                #11- The Sandbox<br>
+                #12- Tether<br>
+                #13- Ethereum<br>
+                #14- BNB<br>
+                #15- USD Coin<br>
+                #16- Cardano<br>
+                #17- Solana<br>
+                #18- Dogecoin<br>
+                #19- Polygon<br>
+                #20- Polkadot
+                </div>
+            </div>
+            <div class="stories-menu">
+                <div class="title2">
+                    <h2>Top Crypto Stories</h2>
+                </div>
+                <div class="content">
+                #1- Terra Luna Classic Price Prediction<br>
+                #2- Lithosphere (LITHO) AI-Blockchain Devs Support Ripple (XRP) in the SEC Case<br>
+                #3- WTF is The Blockchain?<br>
+                #4- Learn Blockchains By Building One <br>
+                #5- The Potential Impact of the Metaverse on Education<br>
+                #6- Top 5 Solutions to the KYC Problem for Crypto or NFT Projects<br>
+                #7- What advantage Do Programmer NFTs Bring to Users?<br>
+                #8- 5 Exchanges Where You Can Trade Crypto Options<br>
+                #9- Integrating BSC Tokens Into Your Crypto Project<br>
+                #10- Will Layer-1 Public Blockchains Rise or Fall in the Next Bull Market?<br>
+                #11- How to Get Started on Creating Your Own Cryptocurrency?<br>
+                #12- The European Blockchain Convention 2023 Returns to Barcelona<br>
+                #13- Space and Time Receives $20 Million in Strategic Investment Led by Microsoft's M12<br>
+                #14- The Fight for a "Transparent" blockchain<br>
+                #15- Reconciling Tech and Ethics: Building a Shariah-Compliant Financial Ecosystem<br>
+                #16- UST/Luna Meltdown & The lessons That I've Learned So Far<br>
+                #17- Regulatory Changes in DeFi and Stablecoin will be Significant<br>
+                #18- Current Web3 Development is Similar to the Internet Boom of the Late 90s<br>
+                #19- A Guide on How to Build a Blockchain with Javascript<br>
+                #20- What you need to start crypto trading: A four-step guide
+                </div>
+            </div>
+        </div>
+
+        <div class="pop-up hide toggle-js" id="shop">
+          
+            <div class="stories-menu">
+                <div class="title2">
+                    <h2>Best Sellers</h2>
+                </div>
+                <div class="content">
+                HackerNoon Tee<br>
+                Hoodie<br>
+                Embroidered Beanie<br>
+                Dad Cap<br>
+                Tote Bag<br>
+                "Respect. The. Fucking. Green" Mug<br>
+                Laptop Sleeve
+                </div>
+            </div>
+            <div class="stories-menu">
+                <div class="title2">
+                    <h2>Accessories</h2>
+                </div>
+                <div class="content">
+                Gift Cards<br>
+                Spiral Notebook<br>
+                Robots Stickers<br>
+                Logos Stickers<br>
+                Laptop Sleeve - Dr.One version
+                </div>
+            </div>
+        </div>
+
+        <div class="pop-up partner hide toggle-js" id="partner">
+            <div class="stories-menu">
+                <div class="title2">
+                    <h2>Partnerships</h2>
+                </div>
+                <div class="content">
+                Book a Meeting w/ a HN Human<br>
+                Create a Writing Contest<br>
+                Brand publishing Program<br>
+                Republish Tech Blogs<br>
+                Media Kit<br>
+                Sitewide Yellow Billboard<br>
+                Newsletter Ads<br>
+                Startup package<br>
+                Niche Marketing<br>
+                Blog for the Corporate Soul<br>
+                Thousands of Customers<br>
+                Book A Meeting w/ a HN human
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="color">
+        <div class="container">
+            <div class="companion">
+                <img src="https://cdn.discordapp.com/attachments/1125057253297369139/1131248153304236223/img-9a033ir.png" width="30%">
+            </div>
+            <div class="companion-text">
+                Your Team Companion for Clean Code
+            </div>
+            <div>
+                <button class="brush-btn"><img src="https://media.discordapp.net/attachments/1125057253297369139/1131248199701639209/brush2.png?width=50&height=50"></button>
+            </div>
+        </div>
+    </div>
+    <div class="news">
+        <div class="first-row">
+            <div class="col left-col">
+                <p class="news-title">Multi-Armed Bandits: The Best Reinforcement Learning Solution for Your Task</p>
+                <br>
+                <img src="https://hackernoon.imgix.net/images/multi-armed-bandit-tlmo3aqzsxs7g7380gr3sh1l.png?auto=format&fit=max&w=1920" >
+                <div class="tag1">
+                    <button class="tag-btn">#reinforcemen-learning</button>
+                </div>
+
+                <div class="writer">
+                    <div class="info">
+                        <div class="avatar">
+                            <img src="https://hackernoon.imgix.net/images/mimWITmtQ4S95mwyk8L8nhBde8r1-t6a3bp1.jpeg?auto=format&fit=max&w=128">
+                        </div>
+                        <div class="name">
+                            <p class="blue">@teenl0ve</p>
+                            <h5>Valentine Shkulov</h5>
+                        </div>
+                        <div class="icon">
+                            <i class="fas fa-headphones" style="color: #2ff820;"></i>
+                            9m read<br>
+                            3 hours ago
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <p class="news-title">Privacy vs. Innovation: Balancing Data Protection and Technological Advancements in 2023</p>
+                <br>
+                <img src="https://hackernoon.imgix.net/images/aYUVr51E4Yg4BHnbNh3CW0F3z062-q1b3w2s.jpeg?auto=format&fit=max&w=1920">
+                <div class="tag2">
+                    <button class="tag-btn">#privacy</button>
+                </div>
+                <div class="writer">
+                    <div class="info">
+                        <div class="avatar">
+                            <img src="https://hackernoon.imgix.net/images/aYUVr51E4Yg4BHnbNh3CW0F3z062-c193rbe.jpeg?auto=format&fit=max&w=128"><br>
+                
+                        </div>
+                        <div class="name">
+                            <p class="blue">@chukwubejoseph</p>
+                            <h5>Joseph Chukwube</h5>
+                        </div>
+                        <div class="icon">
+                            <i class="fas fa-headphones" style="color: #2ff820;"></i>
+                            5m read<br>
+                            13 hours ago
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="second-row">
+            <div class="col mar">
+                <p class="news-title">Crypto Companies Score Big: How Sports Sponsorships Fuel Brand Growth and Engagement</p>
+                <br>
+                <img src="https://hackernoon.imgix.net/images/ZTTHMznNpOU8E23w6ngIBTrJYyG2-r793ugh.jpeg?auto=format&fit=max&w=1920">
+                <div class="tag2">
+                    <button class="tag-btn">#crypto</button>
+                </div>
+                <div class="writer">
+                    <div class="info">
+                        <div class="avatar">
+                            <img src="https://hackernoon.imgix.net/images/ZTTHMznNpOU8E23w6ngIBTrJYyG2-xd93ofo.jpeg?auto=format&fit=max&w=128">
+                        </div>
+                        <div class="name">
+                            <p class="blue">@vladimirgorbunov</p>
+                            <h5>Vladimir Gorbunov</h5>
+                        </div>
+                        <div class="icon">
+                            <i class="fas fa-headphones" style="color: #2ff820;"></i>
+                            5m read<br>
+                            a day ago
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mar">
+                <p class="news-title">Electing a Tech Savvy President is Imperative — Meet Presidential Candidate Francis Suarez</p>
+                <br>
+                <img src="https://hackernoon.imgix.net/images/2jqChkrv03exBUgkLrDzIbfM99q2-6a92ejt.jpeg?auto=format&fit=max&w=1920">
+                <div class="tag2">
+                    <button class="tag-btn">#technology</button>
+                </div>
+                <div class="writer">
+                    <div class="info">
+                        <div class="avatar">
+                            <img src="https://hackernoon.imgix.net/images/BYZDO0omDka95ZAfaEDEKUEDltQ2-9c93ky2.jpeg?auto=format&fit=max&w=128">
+                        </div>
+                        <div class="name">
+                            <p class="blue">@ralphbenko</p>
+                            <h5>Ralph Benko</h5>
+                        </div>
+                        <div class="icon">
+                            <i class="fas fa-headphones" style="color: #2ff820;"></i>
+                            10m read<br>
+                            a day ago
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <p class="news-title">How to Run MPT-7B on AWS SageMaker: MosaicML's ChatGPT Competitor</p>
+                <br>
+                <img src="https://hackernoon.imgix.net/images/fNaodJx94rhQL6VmzGVbEo8jA692-fbx3aj4.png?auto=format&fit=max&w=1920">
+                <div class="tag2">
+                    <button class="tag-btn">#programming</button>
+                </div>
+                <div class="writer">
+                    <div class="info">
+                        <div class="avatar">
+                            <img src="https://lh3.googleusercontent.com/a-/AOh14GgTnT4wFbAkSLZ_bvonpH6kSWq6EpzPmgWZq3pTua8=s96-c?auto=format&fit=max&w=128">
+                        </div>
+                        <div class="name">
+                            <p class="blue">@redgeoff</p>
+                            <h5>Geoff Cox</h5>
+                        </div>
+                        <div class="icon">
+                            <i class="fas fa-headphones" style="color: #2ff820;"></i>
+                            8m read<br>
+                             a day ago
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="categories">
+        <div class="btns">
+            <div class="btns-1">
+            <button class="btn green"><i class="fas fa-database" style="color: #27d349;"></i> DATA-SCIENCE</button>
+            <button class="btn green"><i class="fas fa-industry" style="color: #23e726;"></i> FUTURISM</button>
+            <button class="btn blue1"><i class="fas fa-globe" style="color: #5cecff;"></i> WEB3</button>
+            <button class="btn yellow"><i class="fas fa-file-code" style="color: #eff96c;"></i> PROGRAMMING</button>
+            <button class="btn green"><i class="fas fa-robot" style="color:#23e726;"></i> AI</button>
+            <button class="btn green"><i class="fas fa-wallet" style="color:#23e726;"></i> FINANCE</button>
+            <button class="btn blue1"><i class="fas fa-people-arrows" style="color: #5cecff;"></i> MANAGEMENT</button>
+            </div>
+            <br>
+            <div class="btns-2">
+            <button class="btn green"><i class="fas fa-cloud" style="color:#23e726;"></i> CLOUD</button>
+            <button class="btn blue1"><i class="fas fa-business-time" style="color: #5cecff;"></i> BUSINESS</button>
+            <button class="btn yellow"><i class="far fa-building" style="color: #eff96c;"></i> TECH-COMPANIES</button>
+            <button class="btn blue1"><i class="far fa-clock" style="color: #5cecff;"></i> HACKERNOON</button>
+            <button class="btn blue1"><i class="fas fa-pen-square" style="color: #5cecff;"></i> WRITING</button>
+            <button class="btn green"><i class="fas fa-lightbulb"  style="color:#23e726;"></i> LIFE-HACKING</button>
+            <button class="btn yellow"><i class="fas fa-home" style="color: #eff96c;"></i> REMOTE-WORK</button>
+            </div>
+            <br>
+            <div class="btns-3">
+            <button class="btn green"><i class="fas fa-photo-video" style="color:#23e726;"></i> MEDIA</button>
+            <button class="btn yellow"><i class="fas fa-users" style="color: #eff96c;"></i> SOCIETY</button>
+            <button class="btn green"><i class="fas fa-space-shuttle" style="color:#23e726;"></i> STARTUPS</button>
+            <button class="btn green"><i class="fas fa-microscope" style="color:#23e726;"></i> SCIENCE</button>
+            <button class="btn yellow"><i class="fas fa-newspaper" style="color: #eff96c;"></i> TECH-STORIES</button>
+            <button class="btn blue1"><i class="fas fa-list-ol" style="color: #5cecff;"></i> PRODUCT-MANAGEMENT</button>
+            <button class="btn blue1"><i class="fas fa-user-secret" style="color: #5cecff;"></i> CYBERSECURITY</button>
+            <button class="btn yellow"><i class="fas fa-gamepad" style="color: #eff96c;"></i> GAMING</button>
+            </div>
+        </div>
+        <button class="join-btn">
+            <span class="join-text">
+            Join HackerNoon
+            </span>
+            <img src="https://hackernoon.com/watch-gif.gif?auto=format&fit=max&w=256" width="100%">
+        </button>
+        <div>
+            <p class="line typewriter">Publish your idea. Join the community</p>
+        </div>
+    </div>
+    <div class="poll-container">
+        <div class="poll">
+            <div class="grey-line"></div>
+            <div class="poll-text">
+                POLL OF THE WEEK
+            </div>
+            <div class="grey-line"></div>
+        </div>
+    
+        <h2>How are you feeling?</h2>
+        <br>
+        <i>The world is a whirl of crazy at the moment. So many technologies, so much media, so much to do, so much to achieve. Let us know how you're doing!</i>
+        <div class="poll-items">
+            <button class="poll-btn">I'm feeling great! My life's on track and I'm achieving my goals</button>
+            <button class="poll-btn">I'm alright - life's not too bad and I'm happy settled where I am</button>
+            <button class="poll-btn">I'm getting there - My life's not where I want it to be but I'm optimistic about the future</button>
+            <button class="poll-btn">I'm struggling - life's a bit hectic at the moment and everything is a mess :|</button>
+        </div>
+        <div class="trending">
+            <div class="title">
+                <div class="title1">
+                <div class="grey-line1"></div>
+                <div class="trending-title-green">TRENDING STORIES</div>
+                <div class="grey-line1"></div>
+                </div>
+                <div class="title1">
+                <div class="grey-line1"></div>
+                <div class="trending-title-yellow">TRENDING COMPANIES</div>
+                <div class="grey-line1"></div>
+                </div>
+            </div>
+        </div>
+        <div class="trending-body">
+
+            <div class="trending-items">
+                <div class="left-item">
+                    <div class="left-img">
+                        <img src="https://cdn.hackernoon.com/images/5wpKgV75aONqkTJlafw2yQmK9yd2-4e93rc3.jpeg?auto=format&fit=max&w=1920">
+                    </div>
+                    <div>
+                        <p class="left-text">VS Code Extensions Every Developer Should Know</p><br>
+                        <i class="fas fa-star" style="color: #000000;"></i>10,275 new reads
+                    </div>
+                </div>
+
+                <div class="middle-box">
+                    <p>1</p>
+                </div>
+
+                <div class="right-item">
+                    <div>
+                        <p class="right-text">Roblox (roblox.com)</p><br>
+                        <p style="color:#00b894;">+29.11%</p>
+                        <i class="fas fa-flag" style="color: #000000;"></i> since 2006
+                    </div>
+                    <div class="right-img">
+                        <img src="https://cdn.hackernoon.com/company/roblox-cleerl1z201hxesvjetd88n2b.png">
+                    </div>
+                </div>
+
+                
+                    <div class="left-item">
+                        <div class="left-img">
+                            <img src="https://cdn.hackernoon.com/images/InxBRjRIs6M1kdhuWcyNHiiUrxm1-ts93rbf.jpeg?auto=format&fit=max&w=1920">
+                        </div>
+                        <div>
+                            <p class="left-text">Opside ZK-PoW V2.0: A Multi-chain and Multi-rollup Decentralized Prove...</p><br>
+                            <i class="fas fa-star" style="color: #000000;"></i>6,005 new reads
+                        </div>
+                    </div>
+    
+                    <div class="middle-box">
+                        <p>2</p>
+                    </div>
+    
+                    <div class="right-item">
+                        <div>
+                            <p class="right-text">Instagram (instagram.com)</p><br><br>
+                            <p style="color:red;">-18.45%</p>
+                            <i class="fas fa-flag" style="color: #000000;"></i> since 2010
+                        </div>
+                        <div class="right-img">
+                            <img src="https://cdn.hackernoon.com/company/instagram-cleeqbp0a00xbesvjf3v0aam0.png">
+                        </div>
+                    </div>
+                    
+
+                        <div class="left-item narrow">
+                            <div class="left-img">
+                                <img src="https://cdn.hackernoon.com/images/fzCq5YEgXyXMzUyeDwj9DeNu64Z2-0i93r8z.jpeg?auto=format&fit=max&w=1920">
+                            </div>
+                            <div>
+                                <br><br>
+                                <p class="left-text">Massa</p><br><br><br><br>
+                                <i class="fas fa-star" style="color: #000000;"></i>4,629 new reads
+                            </div>
+                        </div>
+        
+                        <div class="middle-box">
+                            <p>3</p>
+                        </div>
+        
+                        <div class="right-item">
+                            <div>
+                                <br><br>
+                                <p class="right-text">Netflix (netflix.com)</p><br><br><br>
+                                <p style="color:#00b894;">+141.67%</p>
+                                <i class="fas fa-flag" style="color: #000000;"></i> since 1997
+                            </div>
+                            <div class="right-img">
+                                <img src="https://cdn.hackernoon.com/company/netflix-cleeqyh60017pesvje5esfsk0.png">
+                            </div>
+                        </div>
+
+                        
+                            <div class="left-item">
+                                <div class="left-img">
+                                    <img src="https://cdn.hackernoon.com/images/ZUNYhnPTufaik31oCM90c3NDSvl2-g0l2ggh.png?auto=format&fit=max&w=1920">
+                                </div>
+                                <div>
+                                    <p class="left-text">GPT-4 and Stable Diffusion XL for $10/month: Is YouPro Worth It?</p><br>
+                                    <i class="fas fa-star" style="color: #000000;"></i>3,521 new reads
+                                </div>
+                            </div>
+            
+                            <div class="middle-box">
+                                <p>4</p>
+                            </div>
+            
+                            <div class="right-item">
+                                <div>
+                                    <p class="right-text">Facebook (facebook.com)</p><br>
+                                    <br>
+                                    <p style="color:red;">+56.06%</p>
+                                    <i class="fas fa-flag" style="color: #000000;"></i> since 2004
+                                </div>
+                                <div class="right-img">
+                                    <img src="https://cdn.hackernoon.com/company/facebook-cleepskju00olesvj54uz4be2.png">
+                                </div>
+                            </div>
+
+                            <div class="left-item">
+                                <div class="left-img">
+                                    <img src="https://cdn.hackernoon.com/images/NpclsXHLfPf1qjBCjmjlbDg2CFo1-f093m3e.jpeg?auto=format&fit=max&w=1920">
+                                </div>
+                                <div>
+                                    <p class="left-text">Building Efficient npm Packages with React, TypeScript and CSS module...</p><br>
+                                    <i class="fas fa-star" style="color: #000000;"></i>2,061 new reads
+                                </div>
+                            </div>
+            
+                            <div class="middle-box">
+                                <p>5</p>
+                            </div>
+            
+                            <div class="right-item">
+                                <div>
+                                    <p class="right-text">Abbott Laboratories (abbott.com)</p><br>
+                                    <br>
+                                    <p style="color:red;">+2200.00%</p>
+                                    <i class="fas fa-flag" style="color: #000000;"></i> since 1994
+                                </div>
+                                <div class="right-img">
+                                    <img src="https://cdn.hackernoon.com/company/abbottlaboratories-cleeo61iw000sesvjey9lectk.png">
+                                </div>
+                            </div>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="stories">
+            <div class="poll">
+                <div class="grey-line"></div>
+                <div class="poll-text">
+                    STORIES PUBLISHED THROUGH THE YEARS
+                </div>
+                <div class="grey-line"></div>
+            </div>
+            <div class="years">
+                <div class="year active">
+                    <button class="year-btn active" id="2023">2023</button>
+                </div>
+                <div class="year">
+                    <button class="year-btn" id="2022">2022</button>
+                </div>
+                <div class="year">
+                    <button class="year-btn" id="2021">2021</button>
+                </div>
+                <div class="year">
+                    <button class="year-btn" id="2020">2020</button>
+                </div>
+                <div class="year">
+                    <button class="year-btn" id="2019">2019</button>
+                </div>
+            </div>
+            <div class="year-news">
+                <div class="year-new">
+                    <a href="">Father Cassidy</a>
+                    <br>
+                    <br><br><br>
+                    <div class="news-img">
+                    <img src="https://images-ext-1.discordapp.net/external/B0C7of75WcNRQFJF-VteKe2sEuqePSW-1NGe7gNe61w/%3Fauto%3Dformat%26fit%3Dmax%26w%3D1920/https/hackernoon.imgix.net/images/Du0rb39pEuaww4eL35bfjXBE6wB3-txe3sxe.jpeg?width=1440&height=616">
+                </div>
+                <br>
+                    <div class="writer1">
+                        <div class="avatar">
+                            <img src="https://images-ext-2.discordapp.net/external/Vn9sBHFcYow1OAtIeRNPIOvHtEXU2ab871ermzLB6Ic/%3Fauto%3Dformat%26fit%3Dmax%26w%3D128/https/hackernoon.imgix.net/images/GSLcKG9X54OLNBGdT84zx3QRWG02-i792e7u.jpeg?width=192&height=192">
+                        </div>
+                        <div class="writer-info">
+                            @lmmontgomery<br>
+                            <b>L. M. Montgomery</b>
+                        </div>
+                        <div class="date">07/20/23</div>
+                    </div>
+                </div>
+
+                <div class="year-new">
+                    <a href="">The Noonification: DAOs and Compliance: The Importance of Legal Wrappers (7/20/2023)</a>
+                    <br><br>
+                    <div class="news-img">
+                    <img src="https://images-ext-1.discordapp.net/external/nqmbe1DBFrQ7_AqyZp_FCB0j58ptzFnrzXj2w9t2frc/%3Fauto%3Dformat%26fit%3Dmax%26w%3D1920/https/hackernoon.imgix.net/images/noonification_772_kzjcgsh9scp7urdz4epv7raf.png?width=1282&height=733">
+                    </div>
+                    <br>
+                    <div class="writer1">
+                        <div class="avatar">
+                            <img src="https://images-ext-2.discordapp.net/external/BHIoFkf4GmdzRglhoQcf8OXzMUhgJMUF4mcvhte5tc8/%3Fauto%3Dformat%26fit%3Dmax%26w%3D128/https/hackernoon.imgix.net/images/ZPrQk2LnPgbmoh2i1WTwX8hiiBt1-vt93rf9.jpeg?width=192&height=255">
+                        </div>
+                        <div class="writer-info">
+                            @noonification<br>
+                            <b>Noonification</b>
+                        </div>
+                        <div class="date">07/20/23</div>
+                    </div>
+                </div>
+
+                <div class="year-new">
+                    <a href="">The Apple Vision Pro is Best Described Through The Five Stages of Grief</a>
+                    <br><br>
+                    <div class="news-img">
+                    <img src="https://images-ext-2.discordapp.net/external/fMnBeX9AUhGBab73oyiBz51VgpGUmBBePWcUpNRQNLs/%3Fauto%3Dformat%26fit%3Dmax%26w%3D1920/https/hackernoon.imgix.net/images/NpclsXHLfPf1qjBCjmjlbDg2CFo1-wg93mzg.jpeg?width=1318&height=733">
+                    </div>
+                    <br>
+                    <div class="writer1">
+                        <div class="avatar">
+                            <img src="https://images-ext-2.discordapp.net/external/tdSb_utsnAvVepPA9fepUgL0GKozDZIG9qUt3Dx_nts/%3Fauto%3Dformat%26fit%3Dmax%26w%3D128/https/hackernoon.imgix.net/images/2v7XLvX2fMR4EErEB0cRTAONxFX2-nk939x0.jpeg?width=192&height=192">
+                        </div>
+                        <div class="writer-info">
+                            @mindsky<br>
+                            <b>Aleksander Tyryshkin</b>
+                        </div>
+                        <div class="date">07/20/23</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <article class="tab2-btn">
+            <button class="tab-btn activate" data-id="for-readers"><i class="fas fa-book" style="color: #21e713;"></i> For Readers</button>
+            <button class="tab-btn" data-id="for-writer"><i class="fas fa-pen" style="color: #21e713;"></i> For Writers</button>
+            <button class="tab-btn" data-id="for-sponsor"><i class="fas fa-first-aid" style="color: #21e713;"></i> For Sponsors</button>
+            <button class="tab-btn" data-id="about-us"><i class="fas fa-users-cog" style="color: #21e713;"></i> About Us</button>
+        </article>
+        <article class="tab-content">
+            <div class="content1 show-content" id="for-readers">
+                <p>How hackers start their afternoons. HackerNoon reflects the technology 
+                    industry with insightful, educational, and timely stories written by 
+                    real tech professionals. To the internet visitor, we pledge no paywall, 
+                    no pop up ads, and ≈42 new stories everyday. Learn anything about any technology 
+                    for free on HackerNoon.
+                </p>
+                <button class="tab1-btn">Create HackerNoon account</button>
+            </div>
+
+            <div class="content1" id="for-writer">
+                <p>HackerNoon elevates tech writing far and wide across the interwebs. 
+                    With 75k+ stories in our library, we’ve cultivated rare publishing 
+                    and technology expertise. Technology infiltrates all aspects of life, 
+                    so writers from all industries are welcome here. To the contributing writer, 
+                    we pledge quality story distribution, tech editorial expertise, and community growth.
+                </p>
+                <button class="tab1-btn">Submit a Tech Story</button>
+            </div>
+
+            <div class="content1" id="for-sponsor">
+                <p>HackerNoon works directly with sponsors like LaunchDarkly, Heroku, NordVPN, 
+                    ByBit, GCP, AWS, to place ads by content relevancy,
+                     instead of by creepy 3rd party tracking placements. We offer 
+                     placements like sitewide billboard, writing contests, newsletters,
+                      brand as author stories, and niche targetting. This keeps HackerNoon free for readers forever.
+                </p>
+                <button class="tab1-btn">Sponsor HackerNoon</button>
+            </div>
+
+            <div class="content1" id="about-us">
+                <p>HackerNoon is built for technologists to read, write, learn, and publish. We are an open 
+                    and international community of 15k+ contributing writers publishing stories and expertise 
+                    for 3M+ curious and insightful monthly readers. Founded in 2016 @ ArtMap Inc., HackerNoon 
+                    is run by COO Linh Dao Smooke and CEO David Smooke.
+                </p>
+                <button class="tab1-btn">Learn More About Us</button>
+            </div>
+        </article>
+        <div class="today-stories">
+            <div class="grey-line2"></div>
+            <div class="today-text">
+                OTHER STORIES PUBLISHED TODAY
+            </div>
+            <div class="grey-line2"></div>
+        </div>
+        <br>
+        <br>
+        <div class="story-items">
+            <div class="item">
+                <div class="story-title">The Girl with the Anxious Eyes</div>
+                <div class="story-info">
+                    <div class="length">11min read</div>
+                    <div class="time">27 minutes ago</div>
+                </div>
+                <div class="writer-info">
+                    <div class="avatar"><img src="https://hackernoon.imgix.net/images/JJNoXBN9QyOrNvYK2S0pWVGXBGd2-c893urm.png?auto=format&fit=max&w=128"></div>
+                    <div class="align-right">
+                    <div class="writer-id">@agathachristie <i class="fas fa-check-square"></i></div>
+                    <div class="writer-name">Agatha Christie</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="story-title">Anne Beddingfeld starts to narrate her adventures</div>
+                <div class="story-info">
+                    <div class="length">7min read</div>
+                    <div class="time">an hour ago</div>
+                </div>
+                <div class="writer-info">
+                    <div class="avatar"><img src="https://hackernoon.imgix.net/images/JJNoXBN9QyOrNvYK2S0pWVGXBGd2-c893urm.png?auto=format&fit=max&w=128"></div>
+                    <div class="align-right">
+                    <div class="writer-id">@agathachristie <i class="fas fa-check-square"></i></div>
+                    <div class="writer-name">Agatha Christie</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="story-title">THE BAITED TRAP</div>
+                <div class="story-info">
+                    <div class="length">11min read</div>
+                    <div class="time">an hour ago</div>
+                </div>
+                <div class="writer-info">
+                    <div class="avatar"><img src="https://hackernoon.imgix.net/images/JJNoXBN9QyOrNvYK2S0pWVGXBGd2-c893urm.png?auto=format&fit=max&w=128"></div>
+                    <div class="align-right">
+                    <div class="writer-id">@agathachristie <i class="fas fa-check-square"></i></div>
+                    <div class="writer-name">Agatha Christie</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="story-title">Hardly had tranquillity been restored</div>
+                <div class="story-info">
+                    <div class="length">16min read</div>
+                    <div class="time">an hour ago</div>
+                </div>
+                <div class="writer-info">
+                    <div class="avatar"><img src="https://hackernoon.imgix.net/images/oA7kHDrePfTGcaWsVQCDbcEeLfL2-7y036s7.jpeg?auto=format&fit=max&w=128"></div>
+                    <div class="align-right">
+                    <div class="writer-id">@alexandredumas <i class="fas fa-check-square"></i></div>
+                    <div class="writer-name">Alexandre Dumas</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="story-title">Superintendent Battle Arrives</div>
+                <div class="story-info">
+                    <div class="length">7min read</div>
+                    <div class="time">an hour ago</div>
+                </div>
+                <div class="writer-info">
+                    <div class="avatar"><img src="https://hackernoon.imgix.net/images/JJNoXBN9QyOrNvYK2S0pWVGXBGd2-c893urm.png?auto=format&fit=max&w=128"></div>
+                    <div class="align-right">
+                    <div class="writer-id">@agathachristie <i class="fas fa-check-square"></i></div>
+                    <div class="writer-name">Agatha Christie</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="story-title">The Genius for War</div>
+                <div class="story-info">
+                    <div class="length">32min read</div>
+                    <div class="time">2 hours ago</div>
+                </div>
+                <div class="writer-info">
+                    <div class="avatar"><img src="https://hackernoon.imgix.net/images/7mwoAtUvUEZZrXeC0K67Jjn4R3h2-wl93ufn.png?auto=format&fit=max&w=128"></div>
+                    <div class="align-right">
+                    <div class="writer-id">@carlvonclausewitz <i class="fas fa-check-square"></i></div>
+                    <div class="writer-name">Carl Von Clausewitz</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="story-title">Unlocking Success: How Smart Search &<br> Filter Revolutionize E-commerce Businesses</div>
+                <div class="story-info">
+                    <div class="length">5min read</div>
+                    <div class="time">3 hours ago</div>
+                </div>
+                <div class="writer-info">
+                    <div class="avatar"><img src="https://hackernoon.imgix.net/images/5oBTEH5hn9MHMoz41E3LIHOJx8i1-2k93he8.jpeg?auto=format&fit=max&w=128"></div>
+                    <div class="align-right">
+                    <div class="writer-id">@taiwosotikare <i class="fas fa-check-square"></i></div>
+                    <div class="writer-name">Taiwo Sotikare</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="story-title">On arriving in London</div>
+                <div class="story-info">
+                    <div class="length">34min read</div>
+                    <div class="time">3 hours ago</div>
+                </div>
+                <div class="writer-info">
+                    <div class="avatar"><img src="https://hackernoon.imgix.net/images/oA7kHDrePfTGcaWsVQCDbcEeLfL2-7y036s7.jpeg?auto=format&fit=max&w=128"></div>
+                    <div class="align-right">
+                    <div class="writer-id">@alexandredumas <i class="fas fa-check-square"></i></div>
+                    <div class="writer-name">Alexandre Dumas</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="story-title">A Dread Prophecy</div>
+                <div class="story-info">
+                    <div class="length">20min read</div>
+                    <div class="time">3 hours ago</div>
+                </div>
+                <div class="writer-info">
+                    <div class="avatar"><img src="https://hackernoon.imgix.net/images/Du0rb39pEuaww4eL35bfjXBE6wB3-wk93ru9.jpeg?auto=format&fit=max&w=128"></div>
+                    <div class="align-right">
+                    <div class="writer-id">@lmmontgomery <i class="fas fa-check-square"></i></div>
+                    <div class="writer-name">L. M. Montgomery</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="story-title">Ali thus at thirteen years of age was free to indulge in the impetuosity of his character</div>
+                <div class="story-info">
+                    <div class="length">19min read</div>
+                    <div class="time">4 hours ago</div>
+                </div>
+                <div class="writer-info">
+                    <div class="avatar"><img src="https://hackernoon.imgix.net/images/oA7kHDrePfTGcaWsVQCDbcEeLfL2-7y036s7.jpeg?auto=format&fit=max&w=128"></div>
+                    <div class="align-right">
+                    <div class="writer-id">@alexandredumas <i class="fas fa-check-square"></i></div>
+                    <div class="writer-name">Alexandre Dumas</div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <footer>
+            <div class="footer-title">
+                <img src="https://images-ext-1.discordapp.net/external/hiTNq9DTflCFxZCpcG4jeX4wVfOe_bXKhGNBhxwVO4s/%3Fauto%3Dformat%26fit%3Dmax%26w%3D256/https/hackernoon.com/watch-gif.gif?width=720&height=720">
+                THE HACKERNOON NEWSLETTER
+            </div>
+            <div class="footer-content">
+                <i>Quality Reads About Technology Infiltrating Everything</i>
+                <br><br>
+                <input type="email" placeholder="name@company.com" class="email-input">
+                <button class="subscribe-btn">Subscribe (Free)</button>
+                <br>
+                <input type="checkbox" class="checkbox"> <i style="font-weight: 300;font-size: 13px;">Yes, I agree to receive electric content at Noon by HackerNoon</i>
+            </div>
+            <div class="img-container">
+                <img src="https://hackernoon.imgix.net/social-icons/new-icons/twitter.png?auto=format&fit=max&w=48">
+                <img src="https://hackernoon.imgix.net/social-icons/new-icons/github.png?auto=format&fit=max&w=48">
+                <img src="https://hackernoon.imgix.net/social-icons/new-icons/youtube.png?auto=format&fit=max&w=48">
+                <img src="https://hackernoon.imgix.net/social-icons/new-icons/linkedin.png?auto=format&fit=max&w=48">
+                <img src="https://hackernoon.imgix.net/social-icons/new-icons/instagram.png?auto=format&fit=max&w=48">
+                <img src="https://hackernoon.imgix.net/social-icons/new-icons/facebook.png?auto=format&fit=max&w=48">
+                <img src="https://hackernoon.imgix.net/social-icons/new-icons/digg.png?auto=format&fit=max&w=48">
+                <img src="https://hackernoon.imgix.net/social-icons/new-icons/podcast.png?auto=format&fit=max&w=48">
+                <img src="https://hackernoon.imgix.net/social-icons/new-icons/rss.png?auto=format&fit=max&w=48">
+            </div>
+            <div class="foot-text">
+                <div class="footer-col">
+                    <div class="col-title">ABOUT</div>
+                    <div class="txt">Careers</div>
+                    <div class="txt">Contact</div>
+                    <div class="txt">Cookies</div>
+                    <div class="txt">Emails</div>
+                    <div class="txt">Help</div>
+                    <div class="txt">Privacy</div>
+                    <div class="txt">Shareholders</div>
+                    <div class="txt">Startups 2023</div>
+                    <div class="txt">Terms</div>
+                    <div class="txt">Testimonials</div>
+                    <div class="txt">Updates</div>
+                </div>
+
+                <div class="footer-col">
+                    <div class="col-title">READ</div>
+                    <div class="txt">Archive</div>
+                    <div class="txt">Categories</div>
+                    <div class="txt">Image Gallery</div>
+                    <div class="txt">Leaderboard</div>
+                    <div class="txt">Learn Repo</div>
+                    <div class="txt">Noonification</div>
+                    <div class="txt">Signup</div>
+                    <div class="txt">Tech Beat</div>
+                    <div class="txt">Tech Brief</div>
+                    <div class="txt">Tech Tags</div>
+                    <div class="txt">Top Stories</div>
+                </div>
+
+                <div class="footer-col">
+                    <div class="col-title">WRITE</div>
+                    <div class="txt">Distribution</div>
+                    <div class="txt">Editor Tips</div>
+                    <div class="txt">Guidelines</div>
+                    <div class="txt">Help</div>
+                    <div class="txt">New Story</div>
+                    <div class="txt">Perks</div>
+                    <div class="txt">Process</div>
+                    <div class="txt">Prompts</div>
+                    <div class="txt">Subcribers</div>
+                    <div class="txt">Testimonials</div>
+                    <div class="txt">Why Write</div>
+                </div>
+
+                <div class="footer-col">
+                    <div class="col-title">PARTNER</div>
+                    <div class="txt">Billboard</div>
+                    <div class="txt">Business Post</div>
+                    <div class="txt">Case Studies</div>
+                    <div class="txt">Company Directory</div>
+                    <div class="txt">Crypto Directory</div>
+                    <div class="txt">Good Companies</div>
+                    <div class="txt">Newsletters</div>
+                    <div class="txt">Niche Targetting</div>
+                    <div class="txt">Partnerships</div>
+                    <div class="txt">Startup Package</div>
+                    <div class="txt">Writing Contests</div>
+                </div>
+            </div>
+        </footer>
+        <div class="end">
+        </div>
+    </div>
+    <div class="notification">
+        <div class="noti-header">Notifications</div>
+        <div class="noti-rows">
+            <div class="noti-row">
+                There's a new poll on the loose: "How are you feeling!?"
+                <br>
+                Cast your vote now!
+                <div class="noti-time">Last Tuesday at 3:39 PM</div>
+            </div>
+            <div class="noti-row">
+                <i class="fas fa-video" style="color: #2c73ed;"></i>Threads might be Zuck's smartest
+                business move since Instagram - a story by our COO Linh Dao Smooke
+                <div class="noti-time">07/10/2023</div>
+            </div>
+
+            <div class="noti-row">
+                Write on Web App Development, Win from $6,000! <i class="fas fa-fire" style="color: #f03c0f;"></i>
+                <i class="fas fa-fire" style="color: #f03c0f;"></i>
+                <i class="fas fa-fire" style="color: #f03c0f;"></i>
+                <div class="noti-time">07/03/2023</div>
+            </div>
+
+            <div class="noti-row">
+                <i class="fas fa-money-bill-wave-alt" style="color: #f28202;"></i> Game Devs: Write on #Unity
+                Game Development and Analytics, Win from #3,000!
+                <i class="fas fa-money-bill-wave-alt" style="color: #f28202;"></i>
+                <div class="noti-time">06/05/2023</div>
+            </div>
+
+            <div class="noti-row">
+               Lights, camera, internet! Check out the trailer for the Web 2.5 Documentary by HackerNoon. Out now!
+               <div class="noti-time">05/03/2023</div>
+            </div>
+
+            <div class="noti-row">
+                HackerNoon Raises $250k at $50M Valuation From Forward Research <i class="far fa-meh-rolling-eyes" style="color: #000000;"></i>
+                <div class="noti-time">05/16/2023</div>
+            </div>
+
+            <div class="noti-row">
+                Web3 Backups for All <i class="fas fa-hands-wash" style="color: #f1fe39;"></i>
+                All HackerNoon Stories Now Republish on Arweave! Read about it here!
+                <div class="noti-time">05/16/2023</div>
+            </div>
+
+            <div class="noti-row">
+                <i class="far fa-laugh-squint" style="color: #ffaf24;"></i>
+                May the Features Be With You: Discover 8 New Additions
+                That'll Boost Your HackerNoon Game
+                <div class="noti-time">05/15/2023</div>
+            </div>
+
+            <div class="noti-row">
+                HackerNoon is a Multi-language Platform: All Top Stories top stories
+               Now Available in 8 languages
+                <div class="noti-time">11/28/2022</div>
+            </div>
+
+            <div class="noti-row">
+                Start off your week the right way! Here are some must-read 
+                top stories from this week, The Trail to the Sea, Culture, 
+                The Philosopher's Public Library and more
+                <i class="fas fa-heart" style="color: #2df613;"></i>
+                <div class="noti-time">11/28/2022</div>
+            </div>
+
+            <div class="noti-row">
+                Recently laid off from a tech company? Share your story for 
+                free on Hackernoon!
+                <div class="noti-time">11/14/2022</div>
+            </div>
+        </div>
+    </div>
+    <script src="hackernoon.js"></script>
+</body>
